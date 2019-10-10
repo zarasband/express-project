@@ -3,6 +3,7 @@ const app = express();
 const hbs = require('hbs');
 const path = require('path');
 const fs = require('fs');
+const port = 3000;
 
 // app.use((req, res, next) => {
 //     res.render('tamir.hbs');
@@ -39,6 +40,6 @@ app.get('/', (req, res) => {
 app.get('/peransa', (req, res) => {
     res.send('hello peransa');
 });
-app.listen(3000, () => {
+app.listen(port, () => {
     console.log('server is running on port 3000');
 });
